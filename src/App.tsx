@@ -1,17 +1,14 @@
-import './styles/theme.css';
-import './styles/global.css';
 import { Heading } from './components/Heading';
 
-export function App() {
+import './styles/theme.css';
+import './styles/global.css';
 
-  console.log('oi');
+export function App() { 
 
   return (
     <>
-      <Heading/>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Heading>Olá mundo</Heading>
+      <Heading>Olá mundo3</Heading>      
     </>
   )
 }
