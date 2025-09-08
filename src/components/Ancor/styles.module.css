@@ -1,0 +1,27 @@
+.ancor {   
+   text-decoration: none;       
+}
+
+.ancorLink {     
+    display: inline-flex;   
+    align-items: center;
+    justify-content: center;     
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--text-over-primary);
+    transition: all 0.2s ease-in-out;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.ancorLink:hover { 
+    filter: brightness(70%);
+}
+
+.ancorLink svg { 
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
