@@ -8,7 +8,7 @@ type DefaultInputProps = {
 
 export function DefaultInput({
     id, 
-    type,
+    type,   
     labelText,
     ...rest
 }:DefaultInputProps) {
