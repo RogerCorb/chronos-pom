@@ -1,11 +1,13 @@
 import styles from './styles.module.css';
 
-// tipamos a propriedade do componente, obrigatorio
-type AncorProps = { 
-    children: React.ReactNode, // aceita string,number,outros components etc 
-    link: string
+type AncorProps = {
+  children: React.ReactNode
+  link?: string
+  label?: string
+  title?: string
+  clique?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void //foi passada o evento da propriedade onClick
 }
 
-export function Ancor({ children, link }:AncorProps) { 
-    return <a className={styles.ancorLink} href={link}>{children}</a>
+export function Ancor({ children, link,label,title,clique }:AncorProps) { 
+    return <a className={styles.ancorLink} href={link} aria-label={label} title={title} onClick={clique}>{children}</a>
 }
