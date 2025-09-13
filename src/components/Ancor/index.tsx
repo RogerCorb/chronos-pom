@@ -2,9 +2,9 @@ import styles from './styles.module.css';
 
 type AncorProps = {
   children: React.ReactNode
-  link?: string
-  label?: string
-  title?: string
+  link?: string,
+  label?: string,
+  title?: string,
   clique?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void //foi passada o evento da propriedade onClick
 }
 

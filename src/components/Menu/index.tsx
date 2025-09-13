@@ -51,7 +51,7 @@ export function Menu() {
         <Ancor link='#' label='Configurações' title='Configurações'>
            <SettingsIcon/>
         </Ancor>
-        <Ancor  arial-labial='Mudar tema' title='Mudar tema' clique={handleThemeChange}>
+        <Ancor  label='Mudar tema' title='Mudar tema' clique={handleThemeChange}>
            {nextThemeIcon[theme]}           
         </Ancor> 
         
