@@ -12,9 +12,11 @@ self.onmessage = function (event) {
   let countDownSeconds = Math.ceil((endDate - now) / 1000);
 
   function tick() {
+    self.postMessage(countDownSeconds);
     const now = Date.now();
     countDownSeconds = Math.floor((endDate - now) / 1000); // 1000 miliseconds que então vai dar em segundos 1,2,3,4,5...
-    self.postMessage(countDownSeconds);
+
+    setTimeout(tick, 1000);
   }
 
   tick();
